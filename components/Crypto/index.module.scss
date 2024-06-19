@@ -1,0 +1,13 @@
+.crypto {
+  max-width: 1420px;
+  padding: 0 15px;
+  margin: 0 auto;
+  display: flex;
+  flex-flow: column nowrap;
+  gap: 25px;
+
+  @media (min-width: 768px) {
+    flex-flow: row nowrap;
+    gap: 50px;
+  }
+}

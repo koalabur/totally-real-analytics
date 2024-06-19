@@ -1,4 +1,9 @@
 /** @type {import('next').NextConfig} */
-const nextConfig = {};
+const nextConfig = {
+  reactStrictMode: true,
+  sassOptions: {
+    prependData: `@import "@/styles/abstracts/_variables.scss";`,
+  },
+};
 
 export default nextConfig;

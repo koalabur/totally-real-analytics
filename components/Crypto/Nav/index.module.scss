@@ -1,0 +1,127 @@
+.nav {
+  padding: 10px 15px;
+  display: flex;
+  flex-flow: row nowrap;
+  align-items: center;
+
+  &__filter {
+    position: relative;
+
+    &-icon {
+      top: 10px;
+      right: 10px;
+      cursor: pointer;
+      width: 24px;
+
+      @media (min-width: 768px) {
+        width: auto;
+      }
+    }
+
+    &-menu {
+      display: flex;
+      flex-flow: column nowrap;
+      gap: 6px;
+      padding: 10px 15px;
+      border: 1px solid $secondary-color;
+      position: absolute;
+      background: $primary-color;
+      border-radius: 4px;
+      box-shadow: 0 2px 10px $secondary-color;
+      transition: 0.2s ease-in-out;
+      visibility: hidden;
+      opacity: 0;
+      right: 0;
+
+      @media (min-width: 1540px) {
+        right: auto;
+      }
+
+      &-item {
+        color: $tertiary-color;
+        font-weight: 700;
+        font-size: 11px;
+        cursor: pointer;
+        background: transparent;
+        border: none;
+        text-align: left;
+        padding: 6px 0;
+        transition: 0.2s ease-in-out;
+
+        @media (min-width: 768px) {
+          font-size: 15px;
+        }
+
+        &:hover,
+        &--selected {
+          color: $secondary-color;
+        }
+      }
+
+      &-title {
+        color: $tertiary-color;
+        font-weight: 700;
+        font-size: 11px;
+        text-transform: lowercase;
+        border-bottom: 1px solid $secondary-color;
+        padding-bottom: 6px;
+
+        @media (min-width: 768px) {
+          font-size: 15px;
+        }
+      }
+
+      &--visible {
+        visibility: visible;
+        opacity: 1;
+      }
+    }
+  }
+
+  &__legend {
+    display: flex;
+    flex-flow: row nowrap;
+    padding: 10px 15px;
+    gap: 15px;
+    margin-left: auto;
+
+    &-color {
+      width: 11px;
+      height: 11px;
+      border-radius: 3px;
+
+      @media (min-width: 768px) {
+        width: 15px;
+        height: 15px;
+      }
+    }
+
+    &-item {
+      display: flex;
+      flex-flow: row nowrap;
+      align-items: flex-start;
+      gap: 4px;
+      cursor: pointer;
+    }
+
+    &-text {
+      color: $tertiary-color;
+      font-weight: 700;
+      font-size: 11px;
+      text-transform: lowercase;
+
+      @media (min-width: 768px) {
+        font-size: 15px;
+      }
+    }
+  }
+
+  &__title {
+    color: $tertiary-color;
+    font-size: 20px;
+
+    @media (min-width: 768px) {
+      font-size: 40px;
+    }
+  }
+}

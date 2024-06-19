@@ -1,0 +1,23 @@
+.linechart {
+  position: relative;
+  width: 100%;
+  height: fit-content;
+  border: 2px solid $secondary-color;
+  border-radius: 8px;
+
+  &__error {
+    background: red;
+    padding: 5px 10px;
+    text-align: center;
+    color: #FFF;
+    font-size: 20px;
+    max-width: 450px;
+    margin: 0 auto;
+
+    a {
+      color: #FFF;
+      text-decoration: underline;
+      font-weight: 700;
+    }
+  }
+}

@@ -1,0 +1,10 @@
+.header {
+  background: $primary-color;
+  padding: 15px 30px;
+  border-bottom: 2px solid $secondary-color;
+  margin-bottom: 30px;
+
+  @media (min-width: 768px) {
+    margin-bottom: 60px;
+  }
+}
